@@ -23,7 +23,6 @@ export default function Navigation() {
           {t("contact")}
         </Button>
       </Link>
-      <LocaleSwitcher />
 
 
     </nav>

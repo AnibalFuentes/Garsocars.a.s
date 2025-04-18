@@ -40,7 +40,7 @@ export default function LocaleSwitcherSelect({
         onValueChange={onSelectChange}
         disabled={isPending}
       >
-        <SelectTrigger className="w-[120px]">
+        <SelectTrigger>
           <SelectValue />
         </SelectTrigger>
         <SelectContent>{children}</SelectContent>

@@ -130,6 +130,6 @@
   },
   "localeSwitcher": {
     "label": "Change Language",
-    "locale": "{locale,select, en{🇺🇸 Ingles} es{🇪🇸 Español} other{Unknown}}"
+    "locale": "{locale,select, en{🇺🇸} es{🇪🇸} other{Unknown}}"
   }
 }

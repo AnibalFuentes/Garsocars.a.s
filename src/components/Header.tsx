@@ -4,7 +4,7 @@ import Navigation from "@/components/Navigation";
 import { useScrollDirection } from "@/hooks/useScrollDirection";
 import { Link } from "@/i18n/navigation";
 import { useEffect, useState } from "react";
-
+import LocaleSwitcher from "./localeSwitcher";
 
 export default function Header() {
   const scrollDirection = useScrollDirection();
@@ -29,7 +29,10 @@ export default function Header() {
         <Link href="/" className="flex items-center space-x-2 mb-4 md:mb-0">
           <img src="/logo.svg" alt="Logo" className="h-20 w-auto" />
         </Link>
-        <Navigation />
+        <div className="flex items-center">
+          <Navigation />
+          <LocaleSwitcher />
+        </div>
       </div>
     </header>
   );
