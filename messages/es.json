@@ -1,0 +1,135 @@
+{
+  "home": {
+    "title": "Comercio internacional sin complicaciones",
+    "description": "Especialistas en importaciones, exportaciones, asesoría aduanera y logística integral. Conectamos su negocio con el mundo de manera eficiente y segura.",
+    "cta": "Solicitar cotización"
+  },
+  "services": {
+    "title": "Nuestros Servicios",
+    "items": [
+      {
+        "title": "Importaciones Globales",
+        "desc": "Acceda a productos de calidad de proveedores internacionales confiables."
+      },
+      {
+        "title": "Exportaciones Internacionales",
+        "desc": "Lleve sus productos a mercados globales con eficiencia y respaldo profesional."
+      },
+      {
+        "title": "Asesoría Especializada",
+        "desc": "Guía experta en trámites aduaneros y regulaciones de importación."
+      },
+      {
+        "title": "Logística Integral",
+        "desc": "Optimizamos el transporte y almacenamiento de sus productos importados."
+      }
+    ],
+    "whyUsTitle": "¿Por qué elegirnos?",
+    "reasons": [
+      {
+        "title": "Alcance Global",
+        "desc": "Conexiones con proveedores de todo el mundo."
+      },
+      {
+        "title": "Eficiencia",
+        "desc": "Procesos optimizados para ahorrar tiempo y costos."
+      },
+      {
+        "title": "Experiencia",
+        "desc": "Equipo de expertos en comercio internacional."
+      },
+      {
+        "title": "Exportaciones Efectivas",
+        "desc": "Expanda su negocio a nivel internacional con confianza."
+      }
+    ]
+  },
+  "about": {
+    "banner": {
+      "title": "Sobre Nosotros",
+      "description": "Conoce nuestra historia y compromiso con el comercio internacional"
+    },
+    "whoWeAre": {
+      "title": "¿Quiénes Somos?",
+      "description": "GARSOCAR S.A.S fue fundada en el año 2017 con el objetivo de efectuar actividades de comercio exterior y particularmente orientar actividades para la promoción y comercialización de productos colombianos en los mercados internacionales y viceversa.",
+      "extra": "A la fecha, Garsocar S.A.S ha desarrollado la exportación y comercialización de equipos, accesorios, materia prima y herramientas para la producción de energía alternativas como la energía eólica, solar, térmica y biocombustible."
+    },
+    "services": {
+      "solar": "Energía Solar",
+      "wind": "Energía Eólica",
+      "thermal": "Energía Térmica",
+      "biofuel": "Biocombustible"
+    },
+    "mission": {
+      "title": "Nuestra Misión",
+      "text": "Ser líder en el mercado de la exportación e importación desarrollando operaciones de cualquier naturaleza relacionadas con el comercio exterior, así como cualquier actividad similar o complementaria que permitan facilitar el desarrollo del comercio e industria de la sociedad."
+    },
+    "vision": {
+      "title": "Nuestra Visión",
+      "text": "Para 2026, consolidarnos como una empresa referente en el sector de comercio internacional, especializada en energías alternativas, reconocida por la calidad de nuestros servicios y el compromiso con el desarrollo sostenible."
+    },
+    "values": {
+      "title": "Nuestros Valores",
+      "excellence": {
+        "title": "Excelencia",
+        "desc": "Nos comprometemos con los más altos estándares de calidad en todos nuestros servicios de comercio internacional."
+      },
+      "sustainability": {
+        "title": "Sostenibilidad",
+        "desc": "Promovemos soluciones energéticas alternativas que contribuyen al desarrollo sostenible del planeta."
+      },
+      "innovation": {
+        "title": "Innovación",
+        "desc": "Buscamos constantemente nuevas tecnologías y soluciones para mejorar nuestros servicios y productos."
+      }
+    },
+    "facts": {
+      "foundation": {
+        "value": "2017",
+        "label": "Año de Fundación"
+      },
+      "commitment": {
+        "value": "100%",
+        "label": "Compromiso"
+      },
+      "reach": {
+        "value": "Global",
+        "label": "Alcance"
+      }
+    }
+  },
+  "contact": {
+    "banner": {
+      "title": "¿Hablemos?",
+      "description": "Estamos aquí para ayudarte en cada paso del proceso de comercio internacional."
+    },
+    "contactTitle": "Contáctanos",
+    "links": {
+      "call": "Llamar",
+      "whatsapp": "WhatsApp",
+      "email": "Correo",
+      "location": "Ubicación"
+    }
+  },
+
+  "navigation": {
+    "services": "Servicios",
+    "about": "Nosotros",
+    "contact": "Contacto"
+  },
+
+  "footer": {
+    "description": "Soluciones de importación confiables y eficientes para su negocio.",
+    "contact": {
+      "title": "Contáctenos"
+    },
+    "social": {
+      "title": "Síguenos"
+    },
+    "copyright": "Todos los derechos reservados."
+  },
+  "localeSwitcher": {
+    "label": "Change Language",
+    "locale": "{locale,select, en{🇺🇸 Ingles} es{🇪🇸 Español} other{Unknown}}"
+  }
+}

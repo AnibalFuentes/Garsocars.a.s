@@ -1,9 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
-import Link from "next/link";
 import Navigation from "@/components/Navigation";
 import { useScrollDirection } from "@/hooks/useScrollDirection";
+import { Link } from "@/i18n/navigation";
 import { useEffect, useState } from "react";
+
 
 export default function Header() {
   const scrollDirection = useScrollDirection();

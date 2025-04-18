@@ -3,9 +3,13 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import Link from "next/link";
 
-export default function Hero() {
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
+
+export default function Home() {
+  const t = useTranslations("home");
+
   return (
     <section className="bg-gradient-to-r from-primary to-primary-foreground text-white py-20">
       <div className="container mx-auto px-4">
@@ -18,13 +22,9 @@ export default function Hero() {
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              Comercio internacional sin complicaciones
+              {t("title")}
             </h1>
-            <p className="text-xl mb-6">
-              Especialistas en importaciones, exportaciones, asesoría aduanera y
-              logística integral. Conectamos su negocio con el mundo de manera
-              eficiente y segura.
-            </p>
+            <p className="text-xl mb-6">{t("description")}</p>
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
@@ -34,7 +34,7 @@ export default function Hero() {
                 size="lg"
                 className="bg-white text-primary hover:bg-gray-100"
               >
-                <Link href={"/contact"}>Solicitar cotización</Link>
+                <Link href="/contact">{t("cta")}</Link>
               </Button>
             </motion.div>
           </motion.div>
@@ -48,7 +48,7 @@ export default function Hero() {
           >
             <Image
               src="/import.svg"
-              alt="Soluciones de comercio internacional"
+              alt={t("title")}
               width={600}
               height={400}
               className="rounded-lg shadow-lg"

@@ -1,0 +1,138 @@
+{
+  "home": {
+    "title": "International trade made simple",
+    "description": "Experts in imports, exports, customs consulting and comprehensive logistics. We connect your business to the world efficiently and securely.",
+    "cta": "Request a quote"
+  },
+  "services": {
+    "title": "Our Services",
+    "items": [
+      {
+        "title": "Global Imports",
+        "desc": "Access quality products from reliable international suppliers."
+      },
+      {
+        "title": "International Exports",
+        "desc": "Take your products to global markets with professional support."
+      },
+      {
+        "title": "Specialized Consulting",
+        "desc": "Expert guidance on customs procedures and import regulations."
+      },
+      {
+        "title": "Comprehensive Logistics",
+        "desc": "We optimize transportation and storage of your imported products."
+      }
+    ],
+    "whyUsTitle": "Why Choose Us?",
+    "reasons": [
+      {
+        "title": "Global Reach",
+        "desc": "Connections with suppliers worldwide."
+      },
+      {
+        "title": "Efficiency",
+        "desc": "Optimized processes to save time and costs."
+      },
+      {
+        "title": "Experience",
+        "desc": "Team of international trade experts."
+      },
+      {
+        "title": "Effective Exports",
+        "desc": "Expand your business internationally with confidence."
+      }
+    ]
+  },
+  "about": {
+    "banner": {
+      "title": "About Us",
+      "description": "Learn about our history and commitment to international trade"
+    },
+    "whoWeAre": {
+      "title": "Who We Are",
+      "description": "GARSOCAR S.A.S was founded in 2017 with the goal of engaging in foreign trade activities, particularly promoting and marketing Colombian products in international markets and vice versa.",
+      "extra": "To date, Garsocar S.A.S has developed the export and commercialization of equipment, accessories, raw materials, and tools for the production of alternative energy such as wind, solar, thermal, and biofuel energy."
+    },
+    "services": {
+      "solar": "Solar Energy",
+      "wind": "Wind Energy",
+      "thermal": "Thermal Energy",
+      "biofuel": "Biofuel"
+    },
+    "mission": {
+      "title": "Our Mission",
+      "text": "To be a leader in the export and import market by developing operations of any nature related to foreign trade, as well as any similar or complementary activity that facilitates the development of the company's trade and industry."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "text": "By 2026, to be consolidated as a leading company in the international trade sector, specializing in alternative energies, recognized for the quality of our services and our commitment to sustainable development."
+    },
+    "values": {
+      "title": "Our Values",
+      "excellence": {
+        "title": "Excellence",
+        "desc": "We are committed to the highest quality standards in all our international trade services."
+      },
+      "sustainability": {
+        "title": "Sustainability",
+        "desc": "We promote alternative energy solutions that contribute to the planet’s sustainable development."
+      },
+      "innovation": {
+        "title": "Innovation",
+        "desc": "We constantly seek new technologies and solutions to improve our services and products."
+      }
+    },
+    "facts": {
+      "foundation": {
+        "value": "2017",
+        "label": "Foundation Year"
+      },
+      "commitment": {
+        "value": "100%",
+        "label": "Commitment"
+      },
+      "reach": {
+        "value": "Global",
+        "label": "Reach"
+      }
+    }
+  },
+
+  "contact": {
+    "banner": {
+      "title": "Let's Talk",
+      "description": "We're here to help you through every step of the international trade process."
+    },
+    "contactTitle": "Contact Us",
+    "links": {
+      "call": "Call",
+      "whatsapp": "WhatsApp",
+      "email": "Email",
+      "location": "Location"
+    }
+  },
+
+  "navigation": {
+    "services": "Services",
+    "about": "About Us",
+    "contact": "Contact"
+  },
+
+  "footer": {
+    "description": "Reliable and efficient import solutions for your business.",
+    "contact": {
+      "title": "Contact Us"
+    },
+    "social": {
+      "title": "Follow Us"
+    },
+    "copyright": "All rights reserved."
+  },
+
+  
+  "localeSwitcher": {
+    "label": "Change Language",
+    "locale": "{locale,select, en{🇺🇸 English} es{🇪🇸 Spanish} other{Unknown}}"
+  }
+}

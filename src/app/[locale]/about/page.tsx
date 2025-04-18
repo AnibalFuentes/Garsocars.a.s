@@ -2,24 +2,27 @@
 
 import { motion } from "framer-motion";
 import { Sun, Wind, Zap, Globe, Award, Target, Compass } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export default function AboutUs() {
+  const t = useTranslations("about");
+
   const services = [
     {
       icon: <Sun className="h-8 w-8 text-primary" />,
-      label: "Energía Solar",
+      label: t("services.solar"),
     },
     {
       icon: <Wind className="h-8 w-8 text-primary" />,
-      label: "Energía Eólica",
+      label: t("services.wind"),
     },
     {
       icon: <Zap className="h-8 w-8 text-primary" />,
-      label: "Energía Térmica",
+      label: t("services.thermal"),
     },
     {
       icon: <Globe className="h-8 w-8 text-primary" />,
-      label: "Biocombustible",
+      label: t("services.biofuel"),
     },
   ];
 
@@ -33,10 +36,8 @@ export default function AboutUs() {
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl font-bold mb-4">Sobre Nosotros</h1>
-          <p className="text-lg">
-            Conoce nuestra historia y compromiso con el comercio internacional
-          </p>
+          <h1 className="text-4xl font-bold mb-4">{t("banner.title")}</h1>
+          <p className="text-lg">{t("banner.description")}</p>
         </div>
       </motion.section>
 
@@ -56,7 +57,7 @@ export default function AboutUs() {
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-3xl font-bold mb-4">¿Quiénes Somos?</h2>
+              <h2 className="text-3xl font-bold mb-4">{t("whoWeAre.title")}</h2>
               <div className="w-24 h-1 bg-primary mx-auto mb-6"></div>
             </motion.div>
 
@@ -67,11 +68,8 @@ export default function AboutUs() {
               transition={{ duration: 0.6, delay: 0.2 }}
               viewport={{ once: true }}
             >
-              <span className="font-bold text-primary">GARSOCAR S.A.S</span> fue
-              fundada en el año 2017 con el objetivo de efectuar actividades de
-              comercio exterior y particularmente orientar actividades para la
-              promoción y comercialización de productos colombianos en los
-              mercados internacionales y viceversa.
+              <span className="font-bold text-primary">GARSOCAR S.A.S</span>{" "}
+              {t("whoWeAre.description")}
             </motion.p>
           </div>
 
@@ -83,10 +81,7 @@ export default function AboutUs() {
             viewport={{ once: true }}
           >
             <p className="text-lg max-w-3xl mx-auto mb-8">
-              A la fecha, Garsocar S.A.S ha desarrollado la exportación y
-              comercialización de equipos, accesorios, materia prima y
-              herramientas para la producción de energía alternativas como la
-              energía eólica, solar, térmica y biocombustible.
+              {t("whoWeAre.extra")}
             </p>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
@@ -142,15 +137,11 @@ export default function AboutUs() {
                 transition={{ duration: 0.6 }}
                 viewport={{ once: true }}
               >
-                <h2 className="text-3xl font-bold mb-6">Nuestra Misión</h2>
+                <h2 className="text-3xl font-bold mb-6">
+                  {t("mission.title")}
+                </h2>
                 <div className="w-24 h-1 bg-primary mb-8"></div>
-                <p className="text-lg mb-4">
-                  Ser líder en el mercado de la exportación e importación
-                  desarrollando operaciones de cualquier naturaleza relacionadas
-                  con el comercio exterior, así como cualquier actividad similar
-                  o complementaria que permitan facilitar el desarrollo del
-                  comercio e industria de la sociedad.
-                </p>
+                <p className="text-lg mb-4">{t("mission.text")}</p>
               </motion.div>
             </div>
           </motion.div>
@@ -191,14 +182,9 @@ export default function AboutUs() {
                 transition={{ duration: 0.6 }}
                 viewport={{ once: true }}
               >
-                <h2 className="text-3xl font-bold mb-6">Nuestra Visión</h2>
+                <h2 className="text-3xl font-bold mb-6">{t("vision.title")}</h2>
                 <div className="w-24 h-1 bg-primary mb-8"></div>
-                <p className="text-lg mb-4">
-                  Para 2026, consolidarnos como una empresa referente en el
-                  sector de comercio internacional, especializada en energías
-                  alternativas, reconocida por la calidad de nuestros servicios
-                  y el compromiso con el desarrollo sostenible.
-                </p>
+                <p className="text-lg mb-4">{t("vision.text")}</p>
               </motion.div>
             </div>
           </motion.div>
@@ -221,7 +207,7 @@ export default function AboutUs() {
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-3xl font-bold mb-4">Nuestros Valores</h2>
+              <h2 className="text-3xl font-bold mb-4">{t("values.title")}</h2>
               <div className="w-24 h-1 bg-primary mx-auto mb-6"></div>
             </motion.div>
           </div>
@@ -235,11 +221,10 @@ export default function AboutUs() {
               viewport={{ once: true }}
             >
               <Award className="h-12 w-12 text-primary mx-auto mb-4" />
-              <h3 className="text-xl font-bold mb-3">Excelencia</h3>
-              <p>
-                Nos comprometemos con los más altos estándares de calidad en
-                todos nuestros servicios de comercio internacional.
-              </p>
+              <h3 className="text-xl font-bold mb-3">
+                {t("values.excellence.title")}
+              </h3>
+              <p>{t("values.excellence.desc")}</p>
             </motion.div>
 
             <motion.div
@@ -250,11 +235,10 @@ export default function AboutUs() {
               viewport={{ once: true }}
             >
               <Globe className="h-12 w-12 text-primary mx-auto mb-4" />
-              <h3 className="text-xl font-bold mb-3">Sostenibilidad</h3>
-              <p>
-                Promovemos soluciones energéticas alternativas que contribuyen
-                al desarrollo sostenible del planeta.
-              </p>
+              <h3 className="text-xl font-bold mb-3">
+                {t("values.sustainability.title")}
+              </h3>
+              <p>{t("values.sustainability.desc")}</p>
             </motion.div>
 
             <motion.div
@@ -265,11 +249,10 @@ export default function AboutUs() {
               viewport={{ once: true }}
             >
               <Zap className="h-12 w-12 text-primary mx-auto mb-4" />
-              <h3 className="text-xl font-bold mb-3">Innovación</h3>
-              <p>
-                Buscamos constantemente nuevas tecnologías y soluciones para
-                mejorar nuestros servicios y productos.
-              </p>
+              <h3 className="text-xl font-bold mb-3">
+                {t("values.innovation.title")}
+              </h3>
+              <p>{t("values.innovation.desc")}</p>
             </motion.div>
           </div>
         </div>
@@ -292,8 +275,10 @@ export default function AboutUs() {
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              <p className="text-5xl font-bold mb-2">2017</p>
-              <p className="text-lg">Año de Fundación</p>
+              <p className="text-5xl font-bold mb-2">
+                {t("facts.foundation.value")}
+              </p>
+              <p className="text-lg">{t("facts.foundation.label")}</p>
             </motion.div>
 
             <motion.div
@@ -303,8 +288,10 @@ export default function AboutUs() {
               transition={{ duration: 0.6, delay: 0.2 }}
               viewport={{ once: true }}
             >
-              <p className="text-5xl font-bold mb-2">100%</p>
-              <p className="text-lg">Compromiso</p>
+              <p className="text-5xl font-bold mb-2">
+                {t("facts.commitment.value")}
+              </p>
+              <p className="text-lg">{t("facts.commitment.label")}</p>
             </motion.div>
 
             <motion.div
@@ -314,8 +301,10 @@ export default function AboutUs() {
               transition={{ duration: 0.6, delay: 0.4 }}
               viewport={{ once: true }}
             >
-              <p className="text-5xl font-bold mb-2">Global</p>
-              <p className="text-lg">Alcance</p>
+              <p className="text-5xl font-bold mb-2">
+                {t("facts.reach.value")}
+              </p>
+              <p className="text-lg">{t("facts.reach.label")}</p>
             </motion.div>
           </div>
         </div>

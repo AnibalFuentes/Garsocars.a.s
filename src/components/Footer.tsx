@@ -1,7 +1,11 @@
-import Link from "next/link";
+import { useTranslations } from "next-intl";
 import { Instagram, Mail, Phone, MapPin } from "lucide-react";
+import { Link } from "@/i18n/navigation";
 
 export default function Footer() {
+  const  t  = useTranslations("footer");
+  const currentYear = new Date().getFullYear();
+  
   return (
     <footer className="bg-gray-200 text-gray-700 py-12">
       <div className="container mx-auto px-6">
@@ -10,51 +14,12 @@ export default function Footer() {
           <div>
             <h3 className="text-2xl font-bold mb-4">Garsocar</h3>
             <p className="text-sm text-gray-600">
-              Soluciones de importación confiables y eficientes para su negocio.
+              {t("description")}
             </p>
           </div>
 
-          {/* Enlaces rápidos */}
-          {/* <div>
-            <h3 className="text-lg font-semibold mb-4">Enlaces rápidos</h3>
-            <ul className="space-y-2">
-              <li>
-                <Link
-                  href="/"
-                  className="text-sm text-gray-600 hover:text-gray-900 transition"
-                >
-                  Inicio
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/services"
-                  className="text-sm text-gray-600 hover:text-gray-900 transition"
-                >
-                  Servicios
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/about"
-                  className="text-sm text-gray-600 hover:text-gray-900 transition"
-                >
-                  Sobre Nosotros
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/contact"
-                  className="text-sm text-gray-600 hover:text-gray-900 transition"
-                >
-                  Contacto
-                </Link>
-              </li>
-            </ul>
-          </div> */}
-
           <div>
-            <h3 className="text-lg font-semibold mb-4">Contáctenos</h3>
+            <h3 className="text-lg font-semibold mb-4">{t("contact.title")}</h3>
             <p className="flex items-center text-sm text-gray-600 mb-2">
               <Mail className="w-4 h-4 mr-2" />
               <a
@@ -88,14 +53,8 @@ export default function Footer() {
 
           {/* Redes Sociales */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Síguenos</h3>
+            <h3 className="text-lg font-semibold mb-4">{t("social.title")}</h3>
             <div className="flex space-x-4">
-              {/* <Link href="https://facebook.com" className="text-gray-600 hover:text-gray-900 transition">
-                <Facebook className="w-6 h-6" />
-              </Link>
-              <Link href="https://twitter.com" className="text-gray-600 hover:text-gray-900 transition">
-                <Twitter className="w-6 h-6" />
-              </Link> */}
               <Link
                 href="https://www.instagram.com/garsocarsas?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
                 className="text-gray-600 hover:text-gray-900 transition"
@@ -110,7 +69,7 @@ export default function Footer() {
         {/* Derechos reservados */}
         <div className="mt-12 pt-6 border-t border-gray-400 text-center">
           <p className="text-sm text-gray-600">
-            &copy; 2025 Garsocar. Todos los derechos reservados.
+            &copy; {currentYear} Garsocar. {t("copyright")}
           </p>
         </div>
       </div>

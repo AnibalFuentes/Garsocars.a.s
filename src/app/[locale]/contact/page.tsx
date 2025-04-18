@@ -2,27 +2,30 @@
 
 import { motion } from "framer-motion";
 import { Mail, Phone, MapPin, MessageCircle } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export default function Contact() {
+  const t  = useTranslations("contact");
+  
   const links = [
     {
       icon: <Phone className="h-6 w-6 text-primary" />,
-      label: "Llamar",
+      label: t("links.call"),
       href: "tel:+573206634483",
     },
     {
       icon: <MessageCircle className="h-6 w-6 text-primary" />,
-      label: "WhatsApp",
+      label: t("links.whatsapp"),
       href: "https://wa.me/573206634483",
     },
     {
       icon: <Mail className="h-6 w-6 text-primary" />,
-      label: "Correo",
+      label: t("links.email"),
       href: "mailto:garsocarsas@gmail.com",
     },
     {
       icon: <MapPin className="h-6 w-6 text-primary" />,
-      label: "Ubicación",
+      label: t("links.location"),
       href: "https://www.google.com/maps?q=Calle+9b+%235-20+Novalito,+Valledupar,+Colombia",
     },
   ];
@@ -37,11 +40,8 @@ export default function Contact() {
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl font-bold mb-4">¿Hablemos?</h1>
-          <p className="text-lg">
-            Estamos aquí para ayudarte en cada paso del proceso de comercio
-            internacional.
-          </p>
+          <h1 className="text-4xl font-bold mb-4">{t("banner.title")}</h1>
+          <p className="text-lg">{t("banner.description")}</p>
         </div>
       </motion.section>
 
@@ -53,7 +53,7 @@ export default function Contact() {
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-12">Contáctanos</h2>
+          <h2 className="text-3xl font-bold mb-12">{t("contactTitle")}</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
             {links.map((item, index) => (
               <motion.a
