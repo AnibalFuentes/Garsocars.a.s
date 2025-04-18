@@ -1,7 +1,6 @@
 import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
 import { Link } from "@/i18n/navigation";
-import LocaleSwitcher from "./localeSwitcher";
 
 export default function Navigation() {
   const t = useTranslations("navigation");
@@ -23,8 +22,6 @@ export default function Navigation() {
           {t("contact")}
         </Button>
       </Link>
-
-
     </nav>
   );
 }
