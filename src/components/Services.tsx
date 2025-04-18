@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Globe, Package, TrendingUp, Users } from "lucide-react";
+import { Globe, Package, TrendingUp, Users, Plane } from "lucide-react"; // Plane para exportaciones
 import ServiceCard from "./ServiceCard";
 
 export default function Services() {
@@ -27,14 +27,19 @@ export default function Services() {
                 icon: <Package className="h-12 w-12 text-primary mb-4" />,
               },
               {
-                title: "Logística Integral",
-                desc: "Optimizamos el transporte y almacenamiento de sus productos importados.",
-                icon: <TrendingUp className="h-12 w-12 text-primary mb-4" />,
+                title: "Exportaciones Internacionales",
+                desc: "Lleve sus productos a mercados globales con eficiencia y respaldo profesional.",
+                icon: <Plane className="h-12 w-12 text-primary mb-4" />,
               },
               {
                 title: "Asesoría Especializada",
                 desc: "Guía experta en trámites aduaneros y regulaciones de importación.",
                 icon: <Users className="h-12 w-12 text-primary mb-4" />,
+              },
+              {
+                title: "Logística Integral",
+                desc: "Optimizamos el transporte y almacenamiento de sus productos importados.",
+                icon: <TrendingUp className="h-12 w-12 text-primary mb-4" />,
               },
             ].map((service, index) => (
               <motion.div
@@ -89,9 +94,9 @@ export default function Services() {
                 icon: <Users className="h-8 w-8" />,
               },
               {
-                title: "Crecimiento",
-                desc: "Impulsamos el crecimiento de su negocio.",
-                icon: <TrendingUp className="h-8 w-8" />,
+                title: "Exportaciones Efectivas",
+                desc: "Expanda su negocio a nivel internacional con confianza.",
+                icon: <Plane className="h-8 w-8" />,
               },
             ].map((reason, index) => (
               <motion.div
