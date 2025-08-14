@@ -7,6 +7,8 @@ import Footer from "@/components/Footer";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
+import Banner from "@/components/banner";
+import BotonWhatsApp from "@/components/boton-whatsapp";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -41,17 +43,19 @@ export default async function RootLayout({
   }
   return (
     <html lang={locale}>
-      <NextIntlClientProvider>
-        <body
-          className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-        >
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
+        <BotonWhatsApp />
+        <NextIntlClientProvider>
+          <Banner />
           <Header />
           <div className="flex flex-col min-h-screen">
             <main className="flex-grow"> {children}</main>
           </div>
           <Footer />
-        </body>
-      </NextIntlClientProvider>
+        </NextIntlClientProvider>
+      </body>
     </html>
   );
 }

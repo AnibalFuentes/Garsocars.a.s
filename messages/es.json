@@ -2,7 +2,10 @@
   "home": {
     "title": "Comercio internacional sin complicaciones",
     "description": "Especialistas en importaciones, exportaciones, asesoría aduanera y logística integral. Conectamos su negocio con el mundo de manera eficiente y segura.",
-    "cta": "Solicitar cotización"
+    "cta": "Solicitar cotización",
+    "since_quality": "Servicio de calidad desde 2017",
+    "xp": "Años de experiencia",
+    "qa": "Calidad garantizada"
   },
   "services": {
     "title": "Nuestros Servicios",
@@ -113,6 +116,8 @@
   },
 
   "navigation": {
+    "home": "Inicio",
+    "products": "Productos",
     "services": "Servicios",
     "about": "Nosotros",
     "contact": "Contacto"
@@ -130,6 +135,45 @@
   },
   "localeSwitcher": {
     "label": "Change Language",
-    "locale": "{locale,select, en{🇺🇸} es{🇪🇸} other{Unknown}}"
+    "locale": "{locale,select, en{🇺🇸 Ingles} es{🇪🇸 Español} other{Unknown}}"
+  },
+  "products": {
+    "title": "Productos de Comercio Internacional",
+    "description": "Productos de alta calidad para mercados globales con precios competitivos y envíos confiables.",
+    "cta": "Productos Más Vendidos",
+    "featured": {
+      "title": "Colección de Luces Navideñas",
+      "subtitle": "Luces LED eficientes para mercados internacionales"
+    },
+    "card": {
+      "from": "Precio desde",
+      "delivery": "Envío mundial",
+      "moreInfo": "Solicitar cotización"
+    },
+    "features": {
+      "titleDeed": "Calidad certificada",
+      "premiumZone": "Resistente al agua IP65",
+      "directAccess": "OEM disponible",
+      "view": "Colores personalizados",
+      "socialArea": "ECO-amigable",
+      "recreation": "Multifunción",
+      "parking": "Fácil instalación",
+      "access": "Certificado CE/RoHS",
+      "services": "Soporte 24/7"
+    },
+    "badges": {
+      "premium": "Más vendido",
+      "popular": "Artículo popular",
+      "exclusive": "Nuevo diseño",
+      "new": "Modelo 2024"
+    },
+    "finalCTA": {
+      "title": "Soluciones de Comercio Global",
+      "description": "Manejamos toda la documentación de exportación y logística para un comercio internacional sin complicaciones.",
+      "callNow": "Contactar ventas",
+      "scheduleVisit": "Solicitar catálogo"
+    },
+    "showMore": "Mostrar más productos",
+    "showLess": "Mostrar menos productos"
   }
 }

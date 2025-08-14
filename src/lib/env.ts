@@ -1,0 +1,8 @@
+export const env = {
+  APP_NAME: process.env.NEXT_PUBLIC_APP_NAME,
+  APP_DESCRIPTION: process.env.NEXT_PUBLIC_APP_DESCRIPTION,
+  APP_URL: process.env.NEXT_PUBLIC_APP_URL,
+  WHATSAPP_NUMBER: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER,
+  IG: process.env.NEXT_PUBLIC_IG,
+  MAIL: process.env.NEXT_PUBLIC_MAIL,
+};

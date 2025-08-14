@@ -1,5 +1,6 @@
 "use client";
 
+import { env } from "@/lib/env";
 import { motion } from "framer-motion";
 import { Mail, Phone, MapPin, MessageCircle } from "lucide-react";
 import { useTranslations } from "next-intl";
@@ -11,17 +12,17 @@ export default function Contact() {
     {
       icon: <Phone className="h-6 w-6 text-primary" />,
       label: t("links.call"),
-      href: "tel:+573206634483",
+      href: `tel:${env.WHATSAPP_NUMBER}`,
     },
     {
       icon: <MessageCircle className="h-6 w-6 text-primary" />,
       label: t("links.whatsapp"),
-      href: "https://wa.me/573206634483",
+      href: `https://wa.me/${env.WHATSAPP_NUMBER}?text=Hola,%20quiero%20información%20sobre%20los%20servicios%20y%20productos%20de%20GARSOCAR`,
     },
     {
       icon: <Mail className="h-6 w-6 text-primary" />,
       label: t("links.email"),
-      href: "mailto:garsocarsas@gmail.com",
+      href: `mailto:${env.MAIL}`,
     },
     {
       icon: <MapPin className="h-6 w-6 text-primary" />,

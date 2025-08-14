@@ -2,7 +2,10 @@
   "home": {
     "title": "International trade made simple",
     "description": "Experts in imports, exports, customs consulting and comprehensive logistics. We connect your business to the world efficiently and securely.",
-    "cta": "Request a quote"
+    "cta": "Request a quote",
+    "since_quality": "Quality service since 2017",
+    "xp": "Years of experience",
+    "qa": "Guaranteed Quality"
   },
   "services": {
     "title": "Our Services",
@@ -114,6 +117,8 @@
   },
 
   "navigation": {
+    "home": "Home",
+    "products": "Products",
     "services": "Services",
     "about": "About Us",
     "contact": "Contact"
@@ -130,9 +135,50 @@
     "copyright": "All rights reserved."
   },
 
-  
   "localeSwitcher": {
     "label": "Change Language",
-    "locale": "{locale,select, en{🇺🇸} es{🇪🇸} other{Unknown}}"
+    "locale": "{locale,select, en{🇺🇸 English} es{🇪🇸 Spanish} other{Unknown}}"
+  },
+  "products": {
+    "title": "International Trade Products",
+    "description": "Premium quality products for global markets with competitive prices and reliable shipping.",
+    "cta": "Top Selling Products",
+    "featured": {
+      "title": "Christmas Lights Collection",
+      "subtitle": "Energy-efficient LED lights for global markets"
+    },
+    "card": {
+      "from": "Price from",
+      "delivery": "Worldwide shipping",
+      "moreInfo": "Request quote"
+    },
+    "features": {
+      "titleDeed": "Certified quality",
+      "premiumZone": "IP65 waterproof",
+      "directAccess": "OEM available",
+      "view": "Custom colors",
+      "socialArea": "ECO-friendly",
+      "recreation": "Multi-function",
+      "parking": "Easy installation",
+      "access": "CE/RoHS certified",
+      "services": "24/7 support"
+    },
+    "badges": {
+      "premium": "Bestseller",
+      "popular": "Hot item",
+      "exclusive": "New design",
+      "new": "2024 model"
+    },
+    "finalCTA": {
+      "title": "Global Trade Solutions",
+      "description": "We handle all export documentation and logistics for hassle-free international trade.",
+      "callNow": "Contact sales",
+      "scheduleVisit": "Request catalog"
+    },
+    "showMore": "Show more products",
+    "showLess": "Show less products"
   }
+
+
+  
 }
