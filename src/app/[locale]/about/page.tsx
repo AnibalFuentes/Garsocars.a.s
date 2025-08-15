@@ -1,8 +1,16 @@
 "use client";
 
+import { env } from "@/lib/env";
+import { crearMetadata } from "@/lib/metadata";
 import { motion } from "framer-motion";
 import { Sun, Wind, Zap, Globe, Award, Target, Compass } from "lucide-react";
 import { useTranslations } from "next-intl";
+
+export const metadata = crearMetadata({
+  titulo: "About",
+  descripcion: `Explora en imágenes la vida académica, eventos, actividades y logros destacados de ${env.APP_NAME}, reflejando nuestro compromiso con la educación y el desarrollo regional.`,
+  ruta: "about",
+});
 
 export default function AboutUs() {
   const t = useTranslations("about");
